@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9D579B61B0B9E3500364AB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579B51B0B9E3500364AB2 /* main.m */; };
+		C9D579B91B0B9E3500364AB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579B81B0B9E3500364AB2 /* AppDelegate.m */; };
+		C9D579BC1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9D579BA1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodeld */; };
+		C9D579BF1B0B9E3500364AB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579BE1B0B9E3500364AB2 /* ViewController.m */; };
+		C9D579C21B0B9E3500364AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9D579C01B0B9E3500364AB2 /* Main.storyboard */; };
+		C9D579C41B0B9E3500364AB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9D579C31B0B9E3500364AB2 /* Images.xcassets */; };
+		C9D579C71B0B9E3500364AB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D579C51B0B9E3500364AB2 /* LaunchScreen.xib */; };
+		C9D579D31B0B9E3500364AB2 /* TheBlueRiver411Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579D21B0B9E3500364AB2 /* TheBlueRiver411Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9D579CD1B0B9E3500364AB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9D579A81B0B9E3500364AB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9D579AF1B0B9E3500364AB2;
+			remoteInfo = TheBlueRiver411;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9D579B01B0B9E3500364AB2 /* TheBlueRiver411.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBlueRiver411.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D579B41B0B9E3500364AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D579B51B0B9E3500364AB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9D579B71B0B9E3500364AB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9D579B81B0B9E3500364AB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9D579BB1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheBlueRiver411.xcdatamodel; sourceTree = "<group>"; };
+		C9D579BD1B0B9E3500364AB2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C9D579BE1B0B9E3500364AB2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C9D579C11B0B9E3500364AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9D579C31B0B9E3500364AB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9D579C61B0B9E3500364AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C9D579CC1B0B9E3500364AB2 /* TheBlueRiver411Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheBlueRiver411Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D579D11B0B9E3500364AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9D579D21B0B9E3500364AB2 /* TheBlueRiver411Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheBlueRiver411Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9D579AD1B0B9E3500364AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D579C91B0B9E3500364AB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9D579A71B0B9E3500364AB2 = {
+			isa = PBXGroup;
+			children = (
+				C9D579B21B0B9E3500364AB2 /* TheBlueRiver411 */,
+				C9D579CF1B0B9E3500364AB2 /* TheBlueRiver411Tests */,
+				C9D579B11B0B9E3500364AB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9D579B11B0B9E3500364AB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9D579B01B0B9E3500364AB2 /* TheBlueRiver411.app */,
+				C9D579CC1B0B9E3500364AB2 /* TheBlueRiver411Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9D579B21B0B9E3500364AB2 /* TheBlueRiver411 */ = {
+			isa = PBXGroup;
+			children = (
+				C9D579B71B0B9E3500364AB2 /* AppDelegate.h */,
+				C9D579B81B0B9E3500364AB2 /* AppDelegate.m */,
+				C9D579BD1B0B9E3500364AB2 /* ViewController.h */,
+				C9D579BE1B0B9E3500364AB2 /* ViewController.m */,
+				C9D579C01B0B9E3500364AB2 /* Main.storyboard */,
+				C9D579C31B0B9E3500364AB2 /* Images.xcassets */,
+				C9D579C51B0B9E3500364AB2 /* LaunchScreen.xib */,
+				C9D579BA1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodeld */,
+				C9D579B31B0B9E3500364AB2 /* Supporting Files */,
+			);
+			path = TheBlueRiver411;
+			sourceTree = "<group>";
+		};
+		C9D579B31B0B9E3500364AB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9D579B41B0B9E3500364AB2 /* Info.plist */,
+				C9D579B51B0B9E3500364AB2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9D579CF1B0B9E3500364AB2 /* TheBlueRiver411Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C9D579D21B0B9E3500364AB2 /* TheBlueRiver411Tests.m */,
+				C9D579D01B0B9E3500364AB2 /* Supporting Files */,
+			);
+			path = TheBlueRiver411Tests;
+			sourceTree = "<group>";
+		};
+		C9D579D01B0B9E3500364AB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9D579D11B0B9E3500364AB2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9D579AF1B0B9E3500364AB2 /* TheBlueRiver411 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9D579D61B0B9E3500364AB2 /* Build configuration list for PBXNativeTarget "TheBlueRiver411" */;
+			buildPhases = (
+				C9D579AC1B0B9E3500364AB2 /* Sources */,
+				C9D579AD1B0B9E3500364AB2 /* Frameworks */,
+				C9D579AE1B0B9E3500364AB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheBlueRiver411;
+			productName = TheBlueRiver411;
+			productReference = C9D579B01B0B9E3500364AB2 /* TheBlueRiver411.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9D579CB1B0B9E3500364AB2 /* TheBlueRiver411Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9D579D91B0B9E3500364AB2 /* Build configuration list for PBXNativeTarget "TheBlueRiver411Tests" */;
+			buildPhases = (
+				C9D579C81B0B9E3500364AB2 /* Sources */,
+				C9D579C91B0B9E3500364AB2 /* Frameworks */,
+				C9D579CA1B0B9E3500364AB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9D579CE1B0B9E3500364AB2 /* PBXTargetDependency */,
+			);
+			name = TheBlueRiver411Tests;
+			productName = TheBlueRiver411Tests;
+			productReference = C9D579CC1B0B9E3500364AB2 /* TheBlueRiver411Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9D579A81B0B9E3500364AB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ben Russell";
+				TargetAttributes = {
+					C9D579AF1B0B9E3500364AB2 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					C9D579CB1B0B9E3500364AB2 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = C9D579AF1B0B9E3500364AB2;
+					};
+				};
+			};
+			buildConfigurationList = C9D579AB1B0B9E3500364AB2 /* Build configuration list for PBXProject "TheBlueRiver411" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9D579A71B0B9E3500364AB2;
+			productRefGroup = C9D579B11B0B9E3500364AB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9D579AF1B0B9E3500364AB2 /* TheBlueRiver411 */,
+				C9D579CB1B0B9E3500364AB2 /* TheBlueRiver411Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9D579AE1B0B9E3500364AB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D579C21B0B9E3500364AB2 /* Main.storyboard in Resources */,
+				C9D579C71B0B9E3500364AB2 /* LaunchScreen.xib in Resources */,
+				C9D579C41B0B9E3500364AB2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D579CA1B0B9E3500364AB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9D579AC1B0B9E3500364AB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D579B91B0B9E3500364AB2 /* AppDelegate.m in Sources */,
+				C9D579B61B0B9E3500364AB2 /* main.m in Sources */,
+				C9D579BF1B0B9E3500364AB2 /* ViewController.m in Sources */,
+				C9D579BC1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D579C81B0B9E3500364AB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9D579D31B0B9E3500364AB2 /* TheBlueRiver411Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9D579CE1B0B9E3500364AB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9D579AF1B0B9E3500364AB2 /* TheBlueRiver411 */;
+			targetProxy = C9D579CD1B0B9E3500364AB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9D579C01B0B9E3500364AB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9D579C11B0B9E3500364AB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9D579C51B0B9E3500364AB2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9D579C61B0B9E3500364AB2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9D579D41B0B9E3500364AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C9D579D51B0B9E3500364AB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9D579D71B0B9E3500364AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheBlueRiver411/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C9D579D81B0B9E3500364AB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TheBlueRiver411/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C9D579DA1B0B9E3500364AB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TheBlueRiver411Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBlueRiver411.app/TheBlueRiver411";
+			};
+			name = Debug;
+		};
+		C9D579DB1B0B9E3500364AB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TheBlueRiver411Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBlueRiver411.app/TheBlueRiver411";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9D579AB1B0B9E3500364AB2 /* Build configuration list for PBXProject "TheBlueRiver411" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D579D41B0B9E3500364AB2 /* Debug */,
+				C9D579D51B0B9E3500364AB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9D579D61B0B9E3500364AB2 /* Build configuration list for PBXNativeTarget "TheBlueRiver411" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D579D71B0B9E3500364AB2 /* Debug */,
+				C9D579D81B0B9E3500364AB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9D579D91B0B9E3500364AB2 /* Build configuration list for PBXNativeTarget "TheBlueRiver411Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9D579DA1B0B9E3500364AB2 /* Debug */,
+				C9D579DB1B0B9E3500364AB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C9D579BA1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C9D579BB1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodel */,
+			);
+			currentVersion = C9D579BB1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodel */;
+			path = TheBlueRiver411.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C9D579A81B0B9E3500364AB2 /* Project object */;
+}
