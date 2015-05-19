@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Area" syncable="YES">
+        <attribute name="bulletDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="location" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="area" inverseEntity="Location" syncable="YES"/>
+    </entity>
+    <entity name="Bug" syncable="YES">
+        <attribute name="fall" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spring" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="winter" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="bugs" inverseEntity="Location" syncable="YES"/>
+    </entity>
+    <entity name="Location" syncable="YES">
+        <attribute name="bulletDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="directions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="area" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Area" inverseName="location" inverseEntity="Area" syncable="YES"/>
+        <relationship name="bugs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Bug" inverseName="location" inverseEntity="Bug" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Area" positionX="-225" positionY="-153" width="128" height="105"/>
+        <element name="Bug" positionX="-227" positionY="-27" width="128" height="135"/>
+        <element name="Location" positionX="-405" positionY="-144" width="128" height="150"/>
+    </elements>
 </model>
