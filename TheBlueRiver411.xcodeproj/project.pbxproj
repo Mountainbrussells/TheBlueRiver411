@@ -19,6 +19,12 @@
 		C9D579DE1B0BA4BD00364AB2 /* Bug.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579DD1B0BA4BD00364AB2 /* Bug.m */; };
 		C9D579E11B0BA4BD00364AB2 /* Area.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579E01B0BA4BD00364AB2 /* Area.m */; };
 		C9D579E41B0BA4BD00364AB2 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579E31B0BA4BD00364AB2 /* Location.m */; };
+		C9D579E81B0E333700364AB2 /* Hole_icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D579E71B0E333700364AB2 /* Hole_icon3.png */; };
+		C9D579EA1B0E333D00364AB2 /* LighterFishnet_scalechange.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D579E91B0E333D00364AB2 /* LighterFishnet_scalechange.png */; };
+		C9D579EC1B0E334500364AB2 /* LocationsImage.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D579EB1B0E334500364AB2 /* LocationsImage.png */; };
+		C9D579EE1B0E342400364AB2 /* Icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D579ED1B0E342400364AB2 /* Icon_info.png */; };
+		C9D579F21B0E34F500364AB2 /* BRCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579F11B0E34F500364AB2 /* BRCustomCell.m */; };
+		C9D579F51B0E351A00364AB2 /* BRAreasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579F41B0E351A00364AB2 /* BRAreasViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,14 @@
 		C9D579E01B0BA4BD00364AB2 /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
 		C9D579E21B0BA4BD00364AB2 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		C9D579E31B0BA4BD00364AB2 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		C9D579E71B0E333700364AB2 /* Hole_icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Hole_icon3.png; sourceTree = "<group>"; };
+		C9D579E91B0E333D00364AB2 /* LighterFishnet_scalechange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LighterFishnet_scalechange.png; sourceTree = "<group>"; };
+		C9D579EB1B0E334500364AB2 /* LocationsImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationsImage.png; sourceTree = "<group>"; };
+		C9D579ED1B0E342400364AB2 /* Icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_info.png; sourceTree = "<group>"; };
+		C9D579F01B0E34EE00364AB2 /* BRCustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRCustomCell.h; sourceTree = "<group>"; };
+		C9D579F11B0E34F500364AB2 /* BRCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCustomCell.m; sourceTree = "<group>"; };
+		C9D579F31B0E351300364AB2 /* BRAreasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRAreasViewController.h; sourceTree = "<group>"; };
+		C9D579F41B0E351A00364AB2 /* BRAreasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAreasViewController.m; sourceTree = "<group>"; };
 		E4133A6566B970F312BCDBAE /* Pods-TheBlueRiver411.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBlueRiver411.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBlueRiver411/Pods-TheBlueRiver411.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,8 +124,7 @@
 				C9D579C01B0B9E3500364AB2 /* Main.storyboard */,
 				C9D579B71B0B9E3500364AB2 /* AppDelegate.h */,
 				C9D579B81B0B9E3500364AB2 /* AppDelegate.m */,
-				C9D579BD1B0B9E3500364AB2 /* ViewController.h */,
-				C9D579BE1B0B9E3500364AB2 /* ViewController.m */,
+				C9D579EF1B0E34CF00364AB2 /* View Controllers */,
 				C9D579E51B0BEF2300364AB2 /* Core Data Model */,
 				C9D579C31B0B9E3500364AB2 /* Images.xcassets */,
 				C9D579C51B0B9E3500364AB2 /* LaunchScreen.xib */,
@@ -125,6 +138,7 @@
 			children = (
 				C9D579B41B0B9E3500364AB2 /* Info.plist */,
 				C9D579B51B0B9E3500364AB2 /* main.m */,
+				C9D579E61B0E32F700364AB2 /* Images */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,6 +172,30 @@
 				C9D579E31B0BA4BD00364AB2 /* Location.m */,
 			);
 			name = "Core Data Model";
+			sourceTree = "<group>";
+		};
+		C9D579E61B0E32F700364AB2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C9D579E71B0E333700364AB2 /* Hole_icon3.png */,
+				C9D579E91B0E333D00364AB2 /* LighterFishnet_scalechange.png */,
+				C9D579EB1B0E334500364AB2 /* LocationsImage.png */,
+				C9D579ED1B0E342400364AB2 /* Icon_info.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C9D579EF1B0E34CF00364AB2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9D579BD1B0B9E3500364AB2 /* ViewController.h */,
+				C9D579BE1B0B9E3500364AB2 /* ViewController.m */,
+				C9D579F01B0E34EE00364AB2 /* BRCustomCell.h */,
+				C9D579F11B0E34F500364AB2 /* BRCustomCell.m */,
+				C9D579F31B0E351300364AB2 /* BRAreasViewController.h */,
+				C9D579F41B0E351A00364AB2 /* BRAreasViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		F241A960FAE7C502AE96B583 /* Pods */ = {
@@ -251,6 +289,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D579EE1B0E342400364AB2 /* Icon_info.png in Resources */,
+				C9D579EC1B0E334500364AB2 /* LocationsImage.png in Resources */,
+				C9D579E81B0E333700364AB2 /* Hole_icon3.png in Resources */,
+				C9D579EA1B0E333D00364AB2 /* LighterFishnet_scalechange.png in Resources */,
 				C9D579C21B0B9E3500364AB2 /* Main.storyboard in Resources */,
 				C9D579C71B0B9E3500364AB2 /* LaunchScreen.xib in Resources */,
 				C9D579C41B0B9E3500364AB2 /* Images.xcassets in Resources */,
@@ -304,12 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D579F21B0E34F500364AB2 /* BRCustomCell.m in Sources */,
 				C9D579E11B0BA4BD00364AB2 /* Area.m in Sources */,
 				C9D579E41B0BA4BD00364AB2 /* Location.m in Sources */,
 				C9D579DE1B0BA4BD00364AB2 /* Bug.m in Sources */,
 				C9D579B91B0B9E3500364AB2 /* AppDelegate.m in Sources */,
 				C9D579B61B0B9E3500364AB2 /* main.m in Sources */,
 				C9D579BF1B0B9E3500364AB2 /* ViewController.m in Sources */,
+				C9D579F51B0E351A00364AB2 /* BRAreasViewController.m in Sources */,
 				C9D579BC1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
