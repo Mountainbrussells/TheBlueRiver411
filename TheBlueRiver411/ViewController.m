@@ -8,6 +8,13 @@
 
 #import "ViewController.h"
 
+#import "Area.h"
+#import "Location.h"
+#import "Bug.h"
+
+#import "CoreData+MagicalRecord.h"
+
+
 @interface ViewController ()
 
 @end
@@ -16,7 +23,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSArray *allRecords = [Area MR_findAll];
+    
+    NSLog(@"There are %lu areas", (unsigned long)allRecords.count);
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSArray *allRecords = [Area MR_findAll];
+    
+    NSLog(@"There are %lu areas", (unsigned long)allRecords.count);
+
 }
 
 - (void)didReceiveMemoryWarning {

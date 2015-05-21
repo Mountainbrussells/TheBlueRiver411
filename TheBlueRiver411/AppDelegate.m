@@ -8,15 +8,129 @@
 
 #import "AppDelegate.h"
 
+// import needed podfiles
+#import "CoreData/CoreData.h"
+#import "CoreData+MagicalRecord.h"
+#import "Reachability.h"
+
+// import core data models
+#import "Area.h"
+#import "Location.h"
+#import "Bug.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
+#define aWaterURL [NSURL URLWithString:@"http://www.anglers411.com/river?waterId=1"]
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // Set up core data stack
+    [MagicalRecord setupAutoMigratingCoreDataStack];
+    
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"BlueRiver_DataSetup"]) {
+        
+        
+        
+        NSError* jsonError;
+        NSArray* json;
+        
+        Reachability *reachability = [Reachability reachabilityForInternetConnection];
+        NetworkStatus internetStatus = [reachability currentReachabilityStatus];
+        
+        if (internetStatus == NotReachable) {
+            NSLog(@"Offline");
+            NSString *filePath = [[NSBundle mainBundle] pathForResource:@"static" ofType:@"json"];
+            NSString *myJSON = [[NSString alloc] initWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:NULL];
+            json = [NSJSONSerialization JSONObjectWithData:[myJSON dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&jsonError];
+        } else {
+            NSLog(@"Online");
+            NSData* data = [NSData dataWithContentsOfURL:
+                            aWaterURL];
+            json = [NSJSONSerialization
+                    JSONObjectWithData:data
+                    options:kNilOptions
+                    error:&jsonError];
+        }
+        
+        if (!jsonError) {
+            
+            [MagicalRecord cleanUp];
+            NSString* folderPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+            NSError *error = nil;
+            for (NSString *file in [[NSFileManager defaultManager] contentsOfDirectoryAtPath:folderPath error:&error])
+            {
+                [[NSFileManager defaultManager] removeItemAtPath:[folderPath stringByAppendingPathComponent:file] error:&error];
+                if(error)
+                {
+                    NSLog(@"Delete error: %@", error.description);
+                }
+            }
+            
+            [MagicalRecord setupAutoMigratingCoreDataStack];
+            // [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"Anglers411.sqlite"];
+            
+            NSLog(@"Initial Data Load");
+            
+            
+            for (id jsonArea in json) {
+                
+                // Create an area
+                Area *area = [Area MR_createEntity];
+                area.name  = [jsonArea objectForKey:@"name"];
+                area.bulletDescription  = [jsonArea objectForKey:@"bulletDescription"];
+                area.uid  = [jsonArea objectForKey:@"id"];
+                
+                NSArray* jsonLocations  = [jsonArea objectForKey:@"locations"];
+                
+                for (id jsonLocation in jsonLocations) {
+                    
+                    // create a location
+                    Location *location = [Location MR_createEntity];
+                    location.uid = [jsonLocation objectForKey:@"id"];
+                    location.name = [jsonLocation objectForKey:@"name"];
+                    location.desc = [jsonLocation objectForKey:@"desc"];
+                    location.directions = [jsonLocation objectForKey:@"directions"];
+                    location.bulletDescription = [jsonLocation objectForKey:@"bulletDescription"];
+                    location.area = area;
+                    
+                    NSArray* jsonBugs  = [jsonLocation objectForKey:@"bugs"];
+                    
+                    for (id jsonBug in jsonBugs) {
+                        Bug *bug = [Bug MR_createEntity];
+                        bug.name = [jsonBug objectForKey:@"name"];
+                        bug.spring = [jsonBug objectForKey:@"spring"];
+                        bug.summer = [jsonBug objectForKey:@"summer"];
+                        bug.fall = [jsonBug objectForKey:@"fall"];
+                        bug.winter = [jsonBug objectForKey:@"winter"];
+                        bug.location = location;
+                    }
+                }
+                
+            }
+            
+            [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreWithCompletion:^(BOOL success, NSError *error) {
+                if (success) {
+                    NSLog(@"You successfully saved your context.");
+                } else if (error) {
+                    NSLog(@"Error saving context: %@", error.description);
+                }
+            }];
+            
+            
+            
+            // [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+            
+            // Set User Default to prevent another preload of data on startup.
+            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"BlueRiver_DataSetup"];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
+        
+    }
+    
     return YES;
 }
 
@@ -26,8 +140,8 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    // [self saveContext];
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
@@ -44,84 +158,20 @@
     [self saveContext];
 }
 
-#pragma mark - Core Data stack
+#pragma mark - Applications Document Directory
 
-@synthesize managedObjectContext = _managedObjectContext;
-@synthesize managedObjectModel = _managedObjectModel;
-@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
-
-- (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.BenRussell.TheBlueRiver411" in the application's documents directory.
+// Returns the URL to the application's Documents directory.
+- (NSURL *)applicationDocumentsDirectory
+{
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
-}
-
-- (NSManagedObjectModel *)managedObjectModel {
-    // The managed object model for the application. It is a fatal error for the application not to be able to find and load its model.
-    if (_managedObjectModel != nil) {
-        return _managedObjectModel;
-    }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"TheBlueRiver411" withExtension:@"momd"];
-    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    return _managedObjectModel;
-}
-
-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
-    // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it.
-    if (_persistentStoreCoordinator != nil) {
-        return _persistentStoreCoordinator;
-    }
-    
-    // Create the coordinator and store
-    
-    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"TheBlueRiver411.sqlite"];
-    NSError *error = nil;
-    NSString *failureReason = @"There was an error creating or loading the application's saved data.";
-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
-        // Report any error we got.
-        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
-        dict[NSLocalizedDescriptionKey] = @"Failed to initialize the application's saved data";
-        dict[NSLocalizedFailureReasonErrorKey] = failureReason;
-        dict[NSUnderlyingErrorKey] = error;
-        error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
-        // Replace this with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
-    
-    return _persistentStoreCoordinator;
-}
-
-
-- (NSManagedObjectContext *)managedObjectContext {
-    // Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.)
-    if (_managedObjectContext != nil) {
-        return _managedObjectContext;
-    }
-    
-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
-    if (!coordinator) {
-        return nil;
-    }
-    _managedObjectContext = [[NSManagedObjectContext alloc] init];
-    [_managedObjectContext setPersistentStoreCoordinator:coordinator];
-    return _managedObjectContext;
 }
 
 #pragma mark - Core Data Saving support
 
 - (void)saveContext {
-    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
-    if (managedObjectContext != nil) {
-        NSError *error = nil;
-        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
-            // Replace this implementation with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        }
-    }
+    
+    [MagicalRecord cleanUp];
+    
 }
 
 @end
