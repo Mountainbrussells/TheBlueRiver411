@@ -10,7 +10,7 @@
 #import "BRCustomCell.h"
 #import "Area.h"
 #import "CoreData+MagicalRecord.h"
-// #import "BRLocationsViewController.h"
+#import "BRLocationsViewController.h"
 
 
 @interface BRAreasViewController ()
@@ -88,14 +88,14 @@
 
 # pragma mark - segue preperations
 
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-//{
-//    if ([segue.identifier isEqualToString:@"showLocations"]) {
-//        NSIndexPath *indexPath = [self.areaTable indexPathForSelectedRow];
-//        BRLocationsViewController *locationsView = segue.destinationViewController;
-//        locationsView.area = [_dataArray objectAtIndex:indexPath.row];
-//    }
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showLocations"]) {
+        NSIndexPath *indexPath = [self.areaTable indexPathForSelectedRow];
+        BRLocationsViewController *locationsView = segue.destinationViewController;
+        locationsView.area = [_dataArray objectAtIndex:indexPath.row];
+    }
+}
 
 
 /*

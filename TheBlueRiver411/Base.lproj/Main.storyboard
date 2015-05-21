@@ -48,6 +48,7 @@
                                             <outlet property="areaIconView" destination="gtR-hy-pnB" id="TK4-Gi-omu"/>
                                             <outlet property="bulletDescription" destination="7sF-zH-MTY" id="M77-C4-ZkR"/>
                                             <outlet property="nameLabel" destination="pKk-av-sbM" id="uyz-OV-Ajh"/>
+                                            <segue destination="PAU-hh-188" kind="show" identifier="showLocations" id="bTR-bd-AAh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -83,6 +84,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytp-Yd-lfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="576" y="228"/>
+        </scene>
+        <!--Locations View Controller-->
+        <scene sceneID="4Un-Cn-NNR">
+            <objects>
+                <viewController id="PAU-hh-188" customClass="BRLocationsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f04-yy-u5h"/>
+                        <viewControllerLayoutGuide type="bottom" id="SK4-6a-l3C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yo1-Ov-9gY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ZwX-W5-Lq9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="customCellIdentifier" rowHeight="110" id="c5D-rD-CXw" customClass="BRCustomCellTwo">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c5D-rD-CXw" id="vhJ-r1-ndN">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bullet Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ0-mA-Mvo">
+                                                    <rect key="frame" x="198" y="62" width="136" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LocationsImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ohx-km-AtD">
+                                                    <rect key="frame" x="26" y="16" width="78" height="78"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olP-X0-RUx">
+                                                    <rect key="frame" x="198" y="16" width="67" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="areaIconView" destination="Ohx-km-AtD" id="Gpn-WD-tYB"/>
+                                            <outlet property="bulletDescription" destination="XQ0-mA-Mvo" id="15B-T3-TSq"/>
+                                            <outlet property="nameLabel" destination="olP-X0-RUx" id="gar-v5-6Bo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gJ6-vO-anS"/>
+                    <connections>
+                        <outlet property="locationTable" destination="ZwX-W5-Lq9" id="BJS-fu-YGP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ReR-IQ-8Df" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1566.5" y="227.5"/>
         </scene>
     </scenes>
     <resources>
