@@ -27,6 +27,10 @@
 		C9D579F51B0E351A00364AB2 /* BRAreasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579F41B0E351A00364AB2 /* BRAreasViewController.m */; };
 		C9D579F81B0E3CC500364AB2 /* BRCustomCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579F71B0E3CC500364AB2 /* BRCustomCellTwo.m */; };
 		C9D579FB1B0E3CD700364AB2 /* BRLocationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579FA1B0E3CD700364AB2 /* BRLocationsViewController.m */; };
+		C9D579FE1B0E40C900364AB2 /* BRDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579FD1B0E40C900364AB2 /* BRDetailsViewController.m */; };
+		C9D57A011B0E40D800364AB2 /* BRDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D57A001B0E40D800364AB2 /* BRDescriptionViewController.m */; };
+		C9D57A041B0E40E600364AB2 /* BRDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D57A031B0E40E600364AB2 /* BRDirectionsViewController.m */; };
+		C9D57A071B0E40F200364AB2 /* BRBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D57A061B0E40F200364AB2 /* BRBugViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,14 @@
 		C9D579F71B0E3CC500364AB2 /* BRCustomCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRCustomCellTwo.m; sourceTree = "<group>"; };
 		C9D579F91B0E3CCF00364AB2 /* BRLocationsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRLocationsViewController.h; sourceTree = "<group>"; };
 		C9D579FA1B0E3CD700364AB2 /* BRLocationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRLocationsViewController.m; sourceTree = "<group>"; };
+		C9D579FC1B0E40C100364AB2 /* BRDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRDetailsViewController.h; sourceTree = "<group>"; };
+		C9D579FD1B0E40C900364AB2 /* BRDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDetailsViewController.m; sourceTree = "<group>"; };
+		C9D579FF1B0E40D100364AB2 /* BRDescriptionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRDescriptionViewController.h; sourceTree = "<group>"; };
+		C9D57A001B0E40D800364AB2 /* BRDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDescriptionViewController.m; sourceTree = "<group>"; };
+		C9D57A021B0E40E100364AB2 /* BRDirectionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRDirectionsViewController.h; sourceTree = "<group>"; };
+		C9D57A031B0E40E600364AB2 /* BRDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDirectionsViewController.m; sourceTree = "<group>"; };
+		C9D57A051B0E40ED00364AB2 /* BRBugViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRBugViewController.h; sourceTree = "<group>"; };
+		C9D57A061B0E40F200364AB2 /* BRBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBugViewController.m; sourceTree = "<group>"; };
 		E4133A6566B970F312BCDBAE /* Pods-TheBlueRiver411.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBlueRiver411.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBlueRiver411/Pods-TheBlueRiver411.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +216,14 @@
 				C9D579F71B0E3CC500364AB2 /* BRCustomCellTwo.m */,
 				C9D579F91B0E3CCF00364AB2 /* BRLocationsViewController.h */,
 				C9D579FA1B0E3CD700364AB2 /* BRLocationsViewController.m */,
+				C9D579FC1B0E40C100364AB2 /* BRDetailsViewController.h */,
+				C9D579FD1B0E40C900364AB2 /* BRDetailsViewController.m */,
+				C9D579FF1B0E40D100364AB2 /* BRDescriptionViewController.h */,
+				C9D57A001B0E40D800364AB2 /* BRDescriptionViewController.m */,
+				C9D57A021B0E40E100364AB2 /* BRDirectionsViewController.h */,
+				C9D57A031B0E40E600364AB2 /* BRDirectionsViewController.m */,
+				C9D57A051B0E40ED00364AB2 /* BRBugViewController.h */,
+				C9D57A061B0E40F200364AB2 /* BRBugViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -358,9 +378,13 @@
 			files = (
 				C9D579F21B0E34F500364AB2 /* BRCustomCell.m in Sources */,
 				C9D579E11B0BA4BD00364AB2 /* Area.m in Sources */,
+				C9D57A041B0E40E600364AB2 /* BRDirectionsViewController.m in Sources */,
 				C9D579E41B0BA4BD00364AB2 /* Location.m in Sources */,
 				C9D579DE1B0BA4BD00364AB2 /* Bug.m in Sources */,
 				C9D579B91B0B9E3500364AB2 /* AppDelegate.m in Sources */,
+				C9D579FE1B0E40C900364AB2 /* BRDetailsViewController.m in Sources */,
+				C9D57A071B0E40F200364AB2 /* BRBugViewController.m in Sources */,
+				C9D57A011B0E40D800364AB2 /* BRDescriptionViewController.m in Sources */,
 				C9D579F81B0E3CC500364AB2 /* BRCustomCellTwo.m in Sources */,
 				C9D579B61B0B9E3500364AB2 /* main.m in Sources */,
 				C9D579BF1B0B9E3500364AB2 /* ViewController.m in Sources */,

@@ -31,6 +31,14 @@
     areaTable.delegate = self;
     areaTable.dataSource = self;
     
+    [self.areaTable setBackgroundView:nil];
+    [self.areaTable setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LighterFishnet_scalechange"]]];
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:(194/255.0) green:(77/255.0) blue:(1/255.0) alpha:1];
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:(255.0/255.0) green:(255.0/255.0) blue:(255.0/255.0) alpha:1];
+    
+    [self.areaTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -39,7 +47,7 @@
     _dataArray = [NSMutableArray new];
     
     UINavigationItem *navItem = self.navigationItem;
-    navItem.title = @"Anglers411";
+    navItem.title = @"BlueRiver411";
     
     
     [self refreshData];
@@ -68,6 +76,50 @@
     //  This is where the count of cells will come from the back end
     NSLog(@"there are %i areas", _dataArray.count);
     return _dataArray.count;
+    
+}
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    
+    // Get width of cell
+    int cellWidth = cell.bounds.size.width;
+    
+    // SETTING UP A UIView IN ORDER TO CREATE ILLUSION OF SEPERATION BETWEEN CELLS
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    UIView *clearRoundedCornerView = [[UIView alloc] initWithFrame:CGRectMake(10,5,(cellWidth-10),105)];
+    clearRoundedCornerView.backgroundColor = [UIColor clearColor];
+    clearRoundedCornerView.layer.masksToBounds = YES;
+    clearRoundedCornerView.layer.cornerRadius = 3.0;
+    clearRoundedCornerView.layer.shadowOffset = CGSizeMake(-1, 1);
+    clearRoundedCornerView.layer.shadowOpacity = 0.5;
+    
+    // Set up Mask with 2 rounded corners
+    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:clearRoundedCornerView.bounds byRoundingCorners:(UIRectCornerTopLeft | UIRectCornerBottomLeft) cornerRadii:CGSizeMake(20.0, 20.0)];
+    CAShapeLayer *cornerMaskLayer = [CAShapeLayer layer];
+    [cornerMaskLayer setPath:path.CGPath];
+    clearRoundedCornerView.layer.mask = cornerMaskLayer;
+    
+    // Make a transparent, stroked laker which will display the stroke
+    CAShapeLayer *strokeLayer = [CAShapeLayer layer];
+    strokeLayer.path = path.CGPath;
+    strokeLayer.fillColor = [UIColor clearColor].CGColor;
+    strokeLayer.strokeColor = [UIColor colorWithRed:(194/255.0) green:(77/255.0) blue:(1/255.0) alpha:1].CGColor;
+    strokeLayer.lineWidth = 5.0;
+    
+    // Transparent view that will contain the stroke layer
+    UIView *strokeView = [[UIView alloc] initWithFrame:clearRoundedCornerView.bounds];
+    strokeView.userInteractionEnabled = NO; // in case your container view contains controls
+    [strokeView.layer addSublayer:strokeLayer];
+    
+    [clearRoundedCornerView addSubview:strokeView];
+    
+    
+    [cell.contentView addSubview:clearRoundedCornerView];
+    [cell.contentView sendSubviewToBack:clearRoundedCornerView];
+    
+    
     
 }
 

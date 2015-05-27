@@ -11,8 +11,8 @@
 @implementation BRCustomCell
 
 - (void)installSelectedBackgroundView{
-    
-    UIView *bgCustomView = [[UIView alloc] initWithFrame:CGRectMake(10,10,310,110)];
+    int cellWidth = self.bounds.size.width;
+    UIView *bgCustomView = [[UIView alloc] initWithFrame:CGRectMake(10,5,(cellWidth - 10),105)];
     bgCustomView.backgroundColor = [UIColor lightGrayColor];
     bgCustomView.layer.masksToBounds = YES;
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectOffset(bgCustomView.bounds, 10, 10) byRoundingCorners:(UIRectCornerTopLeft | UIRectCornerBottomLeft) cornerRadii:CGSizeMake(20.0, 20.0)];
@@ -21,6 +21,9 @@
     bgCustomView.layer.mask = cornerMaskLayer;
     self.selectedBackgroundView = bgCustomView;
     [self setSelected:YES animated:YES];
+    
+    
+    
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
