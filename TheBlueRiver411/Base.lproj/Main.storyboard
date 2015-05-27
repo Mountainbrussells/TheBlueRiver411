@@ -6,6 +6,29 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="SdK-aG-FQ0">
+            <objects>
+                <viewController id="p88-29-GE7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nED-Vy-5vo"/>
+                        <viewControllerLayoutGuide type="bottom" id="PXX-hx-vp4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KSB-KO-zx4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="LighterFishnet_scalechange.png" translatesAutoresizingMaskIntoConstraints="NO" id="F58-ke-evc">
+                                <rect key="frame" x="-76" y="-82" width="640" height="1136"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NFO-QC-wuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085.5" y="-567.5"/>
+        </scene>
         <!--Areas View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -98,15 +121,19 @@
                                 <rect key="frame" x="276" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="Icon_info.png">
+                                <state key="normal" image="Icon_info.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="p88-29-GE7" kind="show" id="wrZ-Zp-XI0"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="areaTable" destination="TEi-0s-yTI" id="Mbh-5z-JNR"/>
+                        <outlet property="infoButton" destination="gYq-EF-0gw" id="x8d-VA-3WB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -242,7 +269,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Description" id="Buc-BQ-y15"/>
+                    <tabBarItem key="tabBarItem" title="Description" image="Icon_info.png" id="Buc-BQ-y15"/>
                     <connections>
                         <outlet property="descriptionText" destination="Cfe-j1-jhZ" id="aJo-Qt-IMs"/>
                     </connections>
@@ -279,7 +306,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Directions" id="UqF-lh-8YV"/>
+                    <tabBarItem key="tabBarItem" title="Directions" image="Directions_d.png" id="UqF-lh-8YV"/>
                     <connections>
                         <outlet property="directionsView" destination="4A2-OH-gRg" id="Ux7-mm-p8I"/>
                     </connections>
@@ -340,7 +367,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Bugs" id="tlb-9v-c12"/>
+                    <tabBarItem key="tabBarItem" title="Bugs" image="Fly_c.png" id="tlb-9v-c12"/>
                     <connections>
                         <outlet property="bugTable" destination="xEM-ne-nGF" id="2v5-IK-Ec8"/>
                         <outlet property="dateLabel" destination="HBF-5u-QZ9" id="eGM-mZ-oM7"/>
@@ -352,6 +379,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Directions_d.png" width="30" height="30"/>
+        <image name="Fly_c.png" width="30" height="30"/>
         <image name="Hole_icon3.png" width="78" height="78"/>
         <image name="Icon_info.png" width="30" height="30"/>
         <image name="LighterFishnet_scalechange.png" width="640" height="1136"/>

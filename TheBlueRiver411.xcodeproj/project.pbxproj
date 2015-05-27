@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C5C89A02051781F192470CAF /* libPods-TheBlueRiver411.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D519E3827C64F26AB16540 /* libPods-TheBlueRiver411.a */; };
+		C984BA611B161EE100932B6C /* Fly_c.png in Resources */ = {isa = PBXBuildFile; fileRef = C984BA601B161EE100932B6C /* Fly_c.png */; };
+		C984BA631B161EF300932B6C /* Directions_d.png in Resources */ = {isa = PBXBuildFile; fileRef = C984BA621B161EF300932B6C /* Directions_d.png */; };
 		C9D579B61B0B9E3500364AB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579B51B0B9E3500364AB2 /* main.m */; };
 		C9D579B91B0B9E3500364AB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579B81B0B9E3500364AB2 /* AppDelegate.m */; };
 		C9D579BC1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9D579BA1B0B9E3500364AB2 /* TheBlueRiver411.xcdatamodeld */; };
@@ -46,6 +48,8 @@
 /* Begin PBXFileReference section */
 		14D519E3827C64F26AB16540 /* libPods-TheBlueRiver411.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheBlueRiver411.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4834F1E7DFBC4CA2B5E12666 /* Pods-TheBlueRiver411.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBlueRiver411.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheBlueRiver411/Pods-TheBlueRiver411.debug.xcconfig"; sourceTree = "<group>"; };
+		C984BA601B161EE100932B6C /* Fly_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fly_c.png; sourceTree = "<group>"; };
+		C984BA621B161EF300932B6C /* Directions_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Directions_d.png; sourceTree = "<group>"; };
 		C9D579B01B0B9E3500364AB2 /* TheBlueRiver411.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBlueRiver411.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9D579B41B0B9E3500364AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9D579B51B0B9E3500364AB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 				C9D579E91B0E333D00364AB2 /* LighterFishnet_scalechange.png */,
 				C9D579EB1B0E334500364AB2 /* LocationsImage.png */,
 				C9D579ED1B0E342400364AB2 /* Icon_info.png */,
+				C984BA601B161EE100932B6C /* Fly_c.png */,
+				C984BA621B161EF300932B6C /* Directions_d.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -320,6 +326,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9D579EE1B0E342400364AB2 /* Icon_info.png in Resources */,
+				C984BA611B161EE100932B6C /* Fly_c.png in Resources */,
+				C984BA631B161EF300932B6C /* Directions_d.png in Resources */,
 				C9D579EC1B0E334500364AB2 /* LocationsImage.png in Resources */,
 				C9D579E81B0E333700364AB2 /* Hole_icon3.png in Resources */,
 				C9D579EA1B0E333D00364AB2 /* LighterFishnet_scalechange.png in Resources */,

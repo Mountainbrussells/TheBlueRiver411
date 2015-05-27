@@ -20,8 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UITabBarController *tabBarController = self.tabBarController;
-    
+    self.tabBar.tintColor = [UIColor colorWithRed:(1/255.0) green:(60/255.0) blue:(77/255.0) alpha:1];
 }
 
 -(void)viewWillAppear:(BOOL)animated

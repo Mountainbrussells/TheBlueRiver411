@@ -18,6 +18,7 @@
     NSMutableArray *_dataArray;
 }
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *infoButton;
 
 
 @end
@@ -36,7 +37,7 @@
     
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:(194/255.0) green:(77/255.0) blue:(1/255.0) alpha:1];
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:(255.0/255.0) green:(255.0/255.0) blue:(255.0/255.0) alpha:1];
-    
+    self.infoButton.tintColor = [UIColor whiteColor];
     [self.areaTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
 }
