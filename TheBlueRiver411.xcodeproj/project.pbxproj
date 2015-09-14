@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C5C89A02051781F192470CAF /* libPods-TheBlueRiver411.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D519E3827C64F26AB16540 /* libPods-TheBlueRiver411.a */; };
+		C97478111B9F50E000D99EFC /* static.json in Resources */ = {isa = PBXBuildFile; fileRef = C97478101B9F50E000D99EFC /* static.json */; settings = {ASSET_TAGS = (); }; };
 		C984BA611B161EE100932B6C /* Fly_c.png in Resources */ = {isa = PBXBuildFile; fileRef = C984BA601B161EE100932B6C /* Fly_c.png */; };
 		C984BA631B161EF300932B6C /* Directions_d.png in Resources */ = {isa = PBXBuildFile; fileRef = C984BA621B161EF300932B6C /* Directions_d.png */; };
 		C9D579B61B0B9E3500364AB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579B51B0B9E3500364AB2 /* main.m */; };
@@ -33,6 +34,10 @@
 		C9D57A011B0E40D800364AB2 /* BRDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D57A001B0E40D800364AB2 /* BRDescriptionViewController.m */; };
 		C9D57A041B0E40E600364AB2 /* BRDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D57A031B0E40E600364AB2 /* BRDirectionsViewController.m */; };
 		C9D57A071B0E40F200364AB2 /* BRBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D57A061B0E40F200364AB2 /* BRBugViewController.m */; };
+		C9DCE93A1B20B3ED0073D1F3 /* Info-25.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DCE9391B20B3ED0073D1F3 /* Info-25.png */; };
+		C9DEB2631BA74004008EEAA6 /* BLUERiver_splash_640x1136_final.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DEB2621BA74004008EEAA6 /* BLUERiver_splash_640x1136_final.png */; settings = {ASSET_TAGS = (); }; };
+		C9DEB2651BA7406F008EEAA6 /* BLUERiver_splash_640x1136_final-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DEB2641BA7406F008EEAA6 /* BLUERiver_splash_640x1136_final-568h.png */; settings = {ASSET_TAGS = (); }; };
+		C9DEB2671BA74E11008EEAA6 /* BLUERiver_splash-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DEB2661BA74E11008EEAA6 /* BLUERiver_splash-568h.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,7 @@
 /* Begin PBXFileReference section */
 		14D519E3827C64F26AB16540 /* libPods-TheBlueRiver411.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheBlueRiver411.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4834F1E7DFBC4CA2B5E12666 /* Pods-TheBlueRiver411.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBlueRiver411.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheBlueRiver411/Pods-TheBlueRiver411.debug.xcconfig"; sourceTree = "<group>"; };
+		C97478101B9F50E000D99EFC /* static.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = static.json; sourceTree = "<group>"; };
 		C984BA601B161EE100932B6C /* Fly_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fly_c.png; sourceTree = "<group>"; };
 		C984BA621B161EF300932B6C /* Directions_d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Directions_d.png; sourceTree = "<group>"; };
 		C9D579B01B0B9E3500364AB2 /* TheBlueRiver411.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheBlueRiver411.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +96,10 @@
 		C9D57A031B0E40E600364AB2 /* BRDirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDirectionsViewController.m; sourceTree = "<group>"; };
 		C9D57A051B0E40ED00364AB2 /* BRBugViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRBugViewController.h; sourceTree = "<group>"; };
 		C9D57A061B0E40F200364AB2 /* BRBugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBugViewController.m; sourceTree = "<group>"; };
+		C9DCE9391B20B3ED0073D1F3 /* Info-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-25.png"; sourceTree = "<group>"; };
+		C9DEB2621BA74004008EEAA6 /* BLUERiver_splash_640x1136_final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLUERiver_splash_640x1136_final.png; sourceTree = "<group>"; };
+		C9DEB2641BA7406F008EEAA6 /* BLUERiver_splash_640x1136_final-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLUERiver_splash_640x1136_final-568h.png"; sourceTree = "<group>"; };
+		C9DEB2661BA74E11008EEAA6 /* BLUERiver_splash-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BLUERiver_splash-568h.png"; sourceTree = "<group>"; };
 		E4133A6566B970F312BCDBAE /* Pods-TheBlueRiver411.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheBlueRiver411.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheBlueRiver411/Pods-TheBlueRiver411.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +133,7 @@
 		C9D579A71B0B9E3500364AB2 = {
 			isa = PBXGroup;
 			children = (
+				C97478101B9F50E000D99EFC /* static.json */,
 				C9D579B21B0B9E3500364AB2 /* TheBlueRiver411 */,
 				C9D579CF1B0B9E3500364AB2 /* TheBlueRiver411Tests */,
 				C9D579B11B0B9E3500364AB2 /* Products */,
@@ -148,8 +159,8 @@
 				C9D579B81B0B9E3500364AB2 /* AppDelegate.m */,
 				C9D579EF1B0E34CF00364AB2 /* View Controllers */,
 				C9D579E51B0BEF2300364AB2 /* Core Data Model */,
-				C9D579C31B0B9E3500364AB2 /* Images.xcassets */,
 				C9D579C51B0B9E3500364AB2 /* LaunchScreen.xib */,
+				C9D579C31B0B9E3500364AB2 /* Images.xcassets */,
 				C9D579B31B0B9E3500364AB2 /* Supporting Files */,
 			);
 			path = TheBlueRiver411;
@@ -200,11 +211,15 @@
 			isa = PBXGroup;
 			children = (
 				C9D579E71B0E333700364AB2 /* Hole_icon3.png */,
+				C9DEB2641BA7406F008EEAA6 /* BLUERiver_splash_640x1136_final-568h.png */,
+				C9DEB2621BA74004008EEAA6 /* BLUERiver_splash_640x1136_final.png */,
+				C9DEB2661BA74E11008EEAA6 /* BLUERiver_splash-568h.png */,
 				C9D579E91B0E333D00364AB2 /* LighterFishnet_scalechange.png */,
 				C9D579EB1B0E334500364AB2 /* LocationsImage.png */,
 				C9D579ED1B0E342400364AB2 /* Icon_info.png */,
 				C984BA601B161EE100932B6C /* Fly_c.png */,
 				C984BA621B161EF300932B6C /* Directions_d.png */,
+				C9DCE9391B20B3ED0073D1F3 /* Info-25.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -289,11 +304,12 @@
 		C9D579A81B0B9E3500364AB2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ben Russell";
 				TargetAttributes = {
 					C9D579AF1B0B9E3500364AB2 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = GUY34L2LLG;
 					};
 					C9D579CB1B0B9E3500364AB2 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -327,12 +343,17 @@
 			files = (
 				C9D579EE1B0E342400364AB2 /* Icon_info.png in Resources */,
 				C984BA611B161EE100932B6C /* Fly_c.png in Resources */,
+				C97478111B9F50E000D99EFC /* static.json in Resources */,
 				C984BA631B161EF300932B6C /* Directions_d.png in Resources */,
 				C9D579EC1B0E334500364AB2 /* LocationsImage.png in Resources */,
 				C9D579E81B0E333700364AB2 /* Hole_icon3.png in Resources */,
+				C9DEB2651BA7406F008EEAA6 /* BLUERiver_splash_640x1136_final-568h.png in Resources */,
 				C9D579EA1B0E333D00364AB2 /* LighterFishnet_scalechange.png in Resources */,
+				C9DCE93A1B20B3ED0073D1F3 /* Info-25.png in Resources */,
 				C9D579C21B0B9E3500364AB2 /* Main.storyboard in Resources */,
+				C9DEB2631BA74004008EEAA6 /* BLUERiver_splash_640x1136_final.png in Resources */,
 				C9D579C71B0B9E3500364AB2 /* LaunchScreen.xib in Resources */,
+				C9DEB2671BA74E11008EEAA6 /* BLUERiver_splash-568h.png in Resources */,
 				C9D579C41B0B9E3500364AB2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +482,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -476,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -513,7 +535,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -525,9 +547,12 @@
 			baseConfigurationReference = 4834F1E7DFBC4CA2B5E12666 /* Pods-TheBlueRiver411.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TheBlueRiver411/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BenRussell.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -537,9 +562,12 @@
 			baseConfigurationReference = E4133A6566B970F312BCDBAE /* Pods-TheBlueRiver411.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TheBlueRiver411/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BenRussell.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -558,6 +586,7 @@
 				);
 				INFOPLIST_FILE = TheBlueRiver411Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BenRussell.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBlueRiver411.app/TheBlueRiver411";
 			};
@@ -573,6 +602,7 @@
 				);
 				INFOPLIST_FILE = TheBlueRiver411Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BenRussell.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheBlueRiver411.app/TheBlueRiver411";
 			};

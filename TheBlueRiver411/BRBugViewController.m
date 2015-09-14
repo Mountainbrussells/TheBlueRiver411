@@ -184,6 +184,7 @@
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
     Bug *bug = [_dataArray objectAtIndex:indexPath.row];
     cell.textLabel.text = bug.name;
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }

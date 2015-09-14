@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="42n-qF-W8F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="42n-qF-W8F">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,6 +21,39 @@
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="LighterFishnet_scalechange.png" translatesAutoresizingMaskIntoConstraints="NO" id="F58-ke-evc">
                                 <rect key="frame" x="-76" y="-82" width="640" height="1136"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFL-fh-3tQ">
+                                <rect key="frame" x="25" y="72" width="325" height="575"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Local Shops and Guides
+
+Tim West and Eric Zamudio
+@
+Breckenridge Outfitters
+101 N Main St.
+Breckenridge, CO 80424
+(970) 453-4135
+www.breckenridgeoutfitters.com/
+
+Cutthroat Anglers
+400 Blue River Pkwy. 
+Silverthorne, CO 80498
+970.262.2878
+http://fishcolorado.com/
+
+Blue River Anglers
+309 B Main St.
+Frisco, Colorado 80443
+(888) 453-9171
+http://www.blueriveranglers.com/
+
+The Mountain Angler
+311 S. Main St
+Breckenridge, CO 80424
+800.453.4669
+http://www.mountainangler.com/</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -50,9 +83,10 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="customCellIdentifier" rowHeight="110" id="cXX-1Z-h27" customClass="BRCustomCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cXX-1Z-h27" id="i0u-j6-CdV">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LocationsImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="gtR-hy-pnB">
@@ -116,12 +150,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="s9P-fT-0jk">
-                        <barButtonItem key="rightBarButtonItem" image="Icon_info.png" style="plain" id="gYq-EF-0gw">
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="gYq-EF-0gw">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="55k-zr-JrW">
-                                <rect key="frame" x="276" y="7" width="30" height="30"/>
+                                <rect key="frame" x="329" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <state key="normal" image="Icon_info.png">
+                                <state key="normal" image="Info-25.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -176,14 +210,12 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="customCellIdentifier" rowHeight="110" id="c5D-rD-CXw" customClass="BRCustomCellTwo">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="86" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c5D-rD-CXw" id="vhJ-r1-ndN">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hole_icon3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ohx-km-AtD">
-                                                    <rect key="frame" x="17" y="18" width="78" height="78"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bullet Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ0-mA-Mvo">
                                                     <rect key="frame" x="112" y="54" width="230" height="21"/>
                                                     <constraints>
@@ -204,6 +236,9 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Hole_icon3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ohx-km-AtD">
+                                                    <rect key="frame" x="17" y="16" width="78" height="78"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="centerY" secondItem="olP-X0-RUx" secondAttribute="centerY" constant="23" id="AXi-y8-pbf"/>
@@ -253,21 +288,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCY-6M-FOF">
-                                <rect key="frame" x="87" y="104" width="199" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cfe-j1-jhZ">
+                                <rect key="frame" x="22" y="147" width="330" height="463"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCY-6M-FOF">
+                                <rect key="frame" x="130" y="110" width="115" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="17f-8F-7m9"/>
+                                    <constraint firstAttribute="width" constant="115" id="iSl-1X-NKF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cfe-j1-jhZ">
-                                <rect key="frame" x="22" y="147" width="330" height="436"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fCY-6M-FOF" firstAttribute="top" secondItem="iEO-KO-wso" secondAttribute="bottom" constant="46" id="9dw-h0-fsH"/>
+                            <constraint firstAttribute="centerX" secondItem="Cfe-j1-jhZ" secondAttribute="centerX" constant="0.5" id="VF9-LR-3he"/>
+                            <constraint firstItem="Cfe-j1-jhZ" firstAttribute="top" secondItem="fCY-6M-FOF" secondAttribute="bottom" constant="8" id="fLh-GY-jIu"/>
+                            <constraint firstItem="dg7-l5-eVz" firstAttribute="top" secondItem="Cfe-j1-jhZ" secondAttribute="bottom" constant="8" id="t6B-Bs-E6s"/>
+                            <constraint firstAttribute="centerX" secondItem="fCY-6M-FOF" secondAttribute="centerX" id="vv9-8f-V3o"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Description" image="Icon_info.png" id="Buc-BQ-y15"/>
                     <connections>
@@ -276,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7i-c7-LT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2550.5" y="-610.5"/>
+            <point key="canvasLocation" x="2537.5" y="-514.5"/>
         </scene>
         <!--Directions-->
         <scene sceneID="Xdf-pQ-VwC">
@@ -290,21 +336,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Directions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oju-7W-33z">
-                                <rect key="frame" x="149" y="111" width="77" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Directions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oju-7W-33z">
+                                <rect key="frame" x="142" y="110" width="90" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Q5Z-jS-WBq"/>
+                                    <constraint firstAttribute="height" constant="21" id="Tec-H9-CDb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4A2-OH-gRg">
-                                <rect key="frame" x="27" y="170" width="321" height="372"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4A2-OH-gRg">
+                                <rect key="frame" x="27" y="139" width="320" height="460"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oju-7W-33z" firstAttribute="top" secondItem="bIp-Fq-vQc" secondAttribute="bottom" constant="46" id="51i-Gm-tjy"/>
+                            <constraint firstItem="4A2-OH-gRg" firstAttribute="top" secondItem="oju-7W-33z" secondAttribute="bottom" constant="8" id="TRf-i5-jew"/>
+                            <constraint firstItem="iQ6-9o-h8M" firstAttribute="top" secondItem="4A2-OH-gRg" secondAttribute="bottom" constant="8" id="g9L-5L-Pdu"/>
+                            <constraint firstAttribute="centerX" secondItem="oju-7W-33z" secondAttribute="centerX" constant="0.5" id="lut-Dn-T8I"/>
+                            <constraint firstAttribute="centerX" secondItem="4A2-OH-gRg" secondAttribute="centerX" id="ntn-HQ-lLQ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Directions" image="Directions_d.png" id="UqF-lh-8YV"/>
                     <connections>
@@ -348,24 +405,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seasonal Bug Activity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-mF-fOZ">
-                                <rect key="frame" x="103" y="91" width="168" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Seasonal Bug Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPC-mF-fOZ">
+                                <rect key="frame" x="92" y="110" width="191" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xEM-ne-nGF">
-                                <rect key="frame" x="61" y="174" width="253" height="407"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xEM-ne-nGF">
+                                <rect key="frame" x="74" y="167" width="226" height="443"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="226" id="Z97-ML-S80"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBF-5u-QZ9">
-                                <rect key="frame" x="103" y="134" width="168" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBF-5u-QZ9">
+                                <rect key="frame" x="143" y="138" width="88" height="21"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HBF-5u-QZ9" firstAttribute="top" secondItem="aPC-mF-fOZ" secondAttribute="bottom" constant="8" id="JYk-Np-syR"/>
+                            <constraint firstAttribute="centerX" secondItem="HBF-5u-QZ9" secondAttribute="centerX" constant="0.5" id="YIR-is-Rde"/>
+                            <constraint firstItem="xEM-ne-nGF" firstAttribute="top" secondItem="HBF-5u-QZ9" secondAttribute="bottom" constant="8" symbolic="YES" id="dTS-kT-wDZ"/>
+                            <constraint firstAttribute="centerX" secondItem="xEM-ne-nGF" secondAttribute="centerX" id="gvH-Lq-ctt"/>
+                            <constraint firstAttribute="centerX" secondItem="aPC-mF-fOZ" secondAttribute="centerX" constant="0.5" id="kEz-4w-g2C"/>
+                            <constraint firstItem="aPC-mF-fOZ" firstAttribute="top" secondItem="A0C-oe-4Kq" secondAttribute="bottom" constant="46" id="sqx-kF-XAm"/>
+                            <constraint firstItem="bEn-3P-sMo" firstAttribute="top" secondItem="xEM-ne-nGF" secondAttribute="bottom" constant="8" symbolic="YES" id="x7K-5M-jcS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bugs" image="Fly_c.png" id="tlb-9v-c12"/>
                     <connections>
@@ -383,6 +453,7 @@
         <image name="Fly_c.png" width="30" height="30"/>
         <image name="Hole_icon3.png" width="78" height="78"/>
         <image name="Icon_info.png" width="30" height="30"/>
+        <image name="Info-25.png" width="25" height="25"/>
         <image name="LighterFishnet_scalechange.png" width="640" height="1136"/>
         <image name="LocationsImage.png" width="78" height="78"/>
     </resources>
