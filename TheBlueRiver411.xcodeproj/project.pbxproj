@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C5C89A02051781F192470CAF /* libPods-TheBlueRiver411.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14D519E3827C64F26AB16540 /* libPods-TheBlueRiver411.a */; };
-		C97478111B9F50E000D99EFC /* static.json in Resources */ = {isa = PBXBuildFile; fileRef = C97478101B9F50E000D99EFC /* static.json */; settings = {ASSET_TAGS = (); }; };
+		C97478111B9F50E000D99EFC /* static.json in Resources */ = {isa = PBXBuildFile; fileRef = C97478101B9F50E000D99EFC /* static.json */; };
 		C984BA611B161EE100932B6C /* Fly_c.png in Resources */ = {isa = PBXBuildFile; fileRef = C984BA601B161EE100932B6C /* Fly_c.png */; };
 		C984BA631B161EF300932B6C /* Directions_d.png in Resources */ = {isa = PBXBuildFile; fileRef = C984BA621B161EF300932B6C /* Directions_d.png */; };
 		C9D579B61B0B9E3500364AB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D579B51B0B9E3500364AB2 /* main.m */; };
@@ -35,9 +35,9 @@
 		C9D57A041B0E40E600364AB2 /* BRDirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D57A031B0E40E600364AB2 /* BRDirectionsViewController.m */; };
 		C9D57A071B0E40F200364AB2 /* BRBugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D57A061B0E40F200364AB2 /* BRBugViewController.m */; };
 		C9DCE93A1B20B3ED0073D1F3 /* Info-25.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DCE9391B20B3ED0073D1F3 /* Info-25.png */; };
-		C9DEB2631BA74004008EEAA6 /* BLUERiver_splash_640x1136_final.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DEB2621BA74004008EEAA6 /* BLUERiver_splash_640x1136_final.png */; settings = {ASSET_TAGS = (); }; };
-		C9DEB2651BA7406F008EEAA6 /* BLUERiver_splash_640x1136_final-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DEB2641BA7406F008EEAA6 /* BLUERiver_splash_640x1136_final-568h.png */; settings = {ASSET_TAGS = (); }; };
-		C9DEB2671BA74E11008EEAA6 /* BLUERiver_splash-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DEB2661BA74E11008EEAA6 /* BLUERiver_splash-568h.png */; settings = {ASSET_TAGS = (); }; };
+		C9DEB2631BA74004008EEAA6 /* BLUERiver_splash_640x1136_final.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DEB2621BA74004008EEAA6 /* BLUERiver_splash_640x1136_final.png */; };
+		C9DEB2651BA7406F008EEAA6 /* BLUERiver_splash_640x1136_final-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DEB2641BA7406F008EEAA6 /* BLUERiver_splash_640x1136_final-568h.png */; };
+		C9DEB2671BA74E11008EEAA6 /* BLUERiver_splash-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DEB2661BA74E11008EEAA6 /* BLUERiver_splash-568h.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

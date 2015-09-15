@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="42n-qF-W8F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="42n-qF-W8F">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -93,9 +93,9 @@ http://www.mountainangler.com/</string>
                                                     <rect key="frame" x="26" y="16" width="78" height="78"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bullet Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sF-zH-MTY">
-                                                    <rect key="frame" x="99" y="52" width="237" height="36"/>
+                                                    <rect key="frame" x="132" y="52" width="204" height="36"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="237" id="58k-cA-II6"/>
+                                                        <constraint firstAttribute="width" constant="200" id="58k-cA-II6"/>
                                                         <constraint firstAttribute="height" constant="21" id="yqf-Bt-fAv"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
@@ -103,11 +103,11 @@ http://www.mountainangler.com/</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Area" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKk-av-sbM">
-                                                    <rect key="frame" x="103" y="16" width="229" height="23"/>
+                                                    <rect key="frame" x="132" y="16" width="200" height="23"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="23" id="AyA-Oe-4Bc"/>
                                                         <constraint firstAttribute="width" constant="229" id="Tps-Up-p84"/>
-                                                        <constraint firstAttribute="width" constant="229" id="a1g-sl-2Qo"/>
+                                                        <constraint firstAttribute="width" constant="200" id="a1g-sl-2Qo"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -123,9 +123,11 @@ http://www.mountainangler.com/</string>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7sF-zH-MTY" secondAttribute="trailing" constant="-2" id="4kz-ZO-cCd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="pKk-av-sbM" secondAttribute="trailing" constant="2" id="AK2-3B-uyu"/>
                                                 <constraint firstAttribute="centerY" secondItem="pKk-av-sbM" secondAttribute="centerY" constant="23" id="LJc-Dp-qYQ"/>
-                                                <constraint firstItem="gtR-hy-pnB" firstAttribute="leading" secondItem="i0u-j6-CdV" secondAttribute="leadingMargin" constant="9" id="QfA-6d-eWz"/>
+                                                <constraint firstItem="gtR-hy-pnB" firstAttribute="leading" secondItem="i0u-j6-CdV" secondAttribute="leadingMargin" priority="750" constant="9" id="QfA-6d-eWz"/>
                                                 <constraint firstAttribute="centerY" secondItem="gtR-hy-pnB" secondAttribute="centerY" constant="-2" id="Wk6-Zg-FUA"/>
+                                                <constraint firstItem="pKk-av-sbM" firstAttribute="leading" secondItem="gtR-hy-pnB" secondAttribute="trailing" constant="28" id="Z88-2r-XNh"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7sF-zH-MTY" secondAttribute="trailing" id="dac-Za-U5Y"/>
+                                                <constraint firstItem="7sF-zH-MTY" firstAttribute="leading" secondItem="gtR-hy-pnB" secondAttribute="trailing" constant="28" id="hE8-AM-hzM"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="pKk-av-sbM" secondAttribute="trailing" id="hsB-Ju-OCe"/>
                                                 <constraint firstItem="7sF-zH-MTY" firstAttribute="top" secondItem="pKk-av-sbM" secondAttribute="bottom" constant="8" symbolic="YES" id="hyQ-XE-OpN"/>
                                             </constraints>
@@ -216,21 +218,21 @@ http://www.mountainangler.com/</string>
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bullet Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ0-mA-Mvo">
-                                                    <rect key="frame" x="112" y="54" width="230" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bullet Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQ0-mA-Mvo">
+                                                    <rect key="frame" x="142" y="54" width="200" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="237" id="MCa-vR-dcw"/>
+                                                        <constraint firstAttribute="width" constant="200" id="MCa-vR-dcw"/>
                                                         <constraint firstAttribute="height" constant="21" id="PFz-6p-J8l"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olP-X0-RUx">
-                                                    <rect key="frame" x="112" y="16" width="230" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olP-X0-RUx">
+                                                    <rect key="frame" x="142" y="16" width="200" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="8DN-jd-a4l"/>
-                                                        <constraint firstAttribute="width" constant="229" id="Rd5-WS-Mbd"/>
+                                                        <constraint firstAttribute="width" constant="200" id="Rd5-WS-Mbd"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -245,8 +247,10 @@ http://www.mountainangler.com/</string>
                                                 <constraint firstItem="XQ0-mA-Mvo" firstAttribute="top" secondItem="olP-X0-RUx" secondAttribute="bottom" constant="8" symbolic="YES" id="EBQ-3U-NCQ"/>
                                                 <constraint firstAttribute="centerY" secondItem="Ohx-km-AtD" secondAttribute="centerY" constant="-2" id="SiC-mr-4Pe"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="XQ0-mA-Mvo" secondAttribute="trailing" constant="-8" id="WKe-6f-tJr"/>
+                                                <constraint firstItem="XQ0-mA-Mvo" firstAttribute="leading" secondItem="Ohx-km-AtD" secondAttribute="trailing" constant="47" id="XXJ-kU-lp1"/>
                                                 <constraint firstItem="Ohx-km-AtD" firstAttribute="leading" secondItem="vhJ-r1-ndN" secondAttribute="leadingMargin" constant="9" id="kya-Ad-bti"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="olP-X0-RUx" secondAttribute="trailing" constant="-8" id="sjG-8g-Mz5"/>
+                                                <constraint firstItem="olP-X0-RUx" firstAttribute="leading" secondItem="Ohx-km-AtD" secondAttribute="trailing" constant="47" id="zcU-51-Rsr"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -288,7 +292,7 @@ http://www.mountainangler.com/</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cfe-j1-jhZ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cfe-j1-jhZ">
                                 <rect key="frame" x="22" y="147" width="330" height="463"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -309,8 +313,10 @@ http://www.mountainangler.com/</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fCY-6M-FOF" firstAttribute="top" secondItem="iEO-KO-wso" secondAttribute="bottom" constant="46" id="9dw-h0-fsH"/>
+                            <constraint firstItem="Cfe-j1-jhZ" firstAttribute="leading" secondItem="odj-EN-2jf" secondAttribute="leadingMargin" constant="6" id="Qn7-ll-2t4"/>
                             <constraint firstAttribute="centerX" secondItem="Cfe-j1-jhZ" secondAttribute="centerX" constant="0.5" id="VF9-LR-3he"/>
                             <constraint firstItem="Cfe-j1-jhZ" firstAttribute="top" secondItem="fCY-6M-FOF" secondAttribute="bottom" constant="8" id="fLh-GY-jIu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cfe-j1-jhZ" secondAttribute="trailing" constant="7" id="r9Z-TQ-gC8"/>
                             <constraint firstItem="dg7-l5-eVz" firstAttribute="top" secondItem="Cfe-j1-jhZ" secondAttribute="bottom" constant="8" id="t6B-Bs-E6s"/>
                             <constraint firstAttribute="centerX" secondItem="fCY-6M-FOF" secondAttribute="centerX" id="vv9-8f-V3o"/>
                         </constraints>
@@ -346,7 +352,7 @@ http://www.mountainangler.com/</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4A2-OH-gRg">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4A2-OH-gRg">
                                 <rect key="frame" x="27" y="139" width="320" height="460"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -360,7 +366,9 @@ http://www.mountainangler.com/</string>
                             <constraint firstItem="4A2-OH-gRg" firstAttribute="top" secondItem="oju-7W-33z" secondAttribute="bottom" constant="8" id="TRf-i5-jew"/>
                             <constraint firstItem="iQ6-9o-h8M" firstAttribute="top" secondItem="4A2-OH-gRg" secondAttribute="bottom" constant="8" id="g9L-5L-Pdu"/>
                             <constraint firstAttribute="centerX" secondItem="oju-7W-33z" secondAttribute="centerX" constant="0.5" id="lut-Dn-T8I"/>
+                            <constraint firstItem="4A2-OH-gRg" firstAttribute="leading" secondItem="1B6-yA-wb3" secondAttribute="leadingMargin" constant="11" id="mGs-YV-AfY"/>
                             <constraint firstAttribute="centerX" secondItem="4A2-OH-gRg" secondAttribute="centerX" id="ntn-HQ-lLQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4A2-OH-gRg" secondAttribute="trailing" constant="12" id="stm-IC-V94"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Directions" image="Directions_d.png" id="UqF-lh-8YV"/>
